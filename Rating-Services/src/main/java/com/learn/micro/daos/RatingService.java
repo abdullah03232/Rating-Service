@@ -20,4 +20,10 @@ public interface RatingService {
 
 	// get all ratings
 	List<Rating> getAllRating();
+	
+	//rating by userId
+	List<Rating> getRatingByUser(String userId);
+	
+	//rating by hotel Id
+	List<Rating> getRatingByHotelId(String hotelId);
 }

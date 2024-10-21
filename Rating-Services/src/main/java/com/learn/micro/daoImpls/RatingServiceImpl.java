@@ -46,4 +46,16 @@ public class RatingServiceImpl implements RatingService{
 		return repository.findAll();
 	}
 
+	@Override
+	public List<Rating> getRatingByUser(String userId) {
+		return repository.findByUserId(userId);
+	}
+
+	@Override
+	public List<Rating> getRatingByHotelId(String hotelId) {
+		return repository.findByHotelId(hotelId);
+	}
+
+	
+
 }
